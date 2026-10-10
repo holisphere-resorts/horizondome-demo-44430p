@@ -97,14 +97,19 @@ if (navToggle) {
 if (backToTop) {
   let frame = 0;
   const sections = $$('main > section[id]');
+  const navSectionAliases = {toepassingen:'domes','voor-wie':'modellen'};
   function updateControls() {
     frame = 0;
     header.classList.toggle('is-scrolled',window.scrollY > 40);
     backToTop.hidden = window.scrollY <= window.innerHeight;
     let active = sections[0]?.id;
-    sections.forEach(section => { if (section.getBoundingClientRect().top <= header.offsetHeight + 24) active = section.id; });
+    sections.forEach(section => {
+      const threshold = header.offsetHeight + (parseFloat(getComputedStyle(section).scrollMarginTop) || 0) + 1;
+      if (section.getBoundingClientRect().top <= threshold) active = section.id;
+    });
+    const activeNavSection = navSectionAliases[active] || active;
     $$('#site-navigation a[href^="#"]').forEach(link => {
-      const match = link.getAttribute('href') === `#${active}`;
+      const match = link.getAttribute('href') === `#${activeNavSection}`;
       link.classList.toggle('is-active',match);
       if (match) link.setAttribute('aria-current','location'); else link.removeAttribute('aria-current');
     });
