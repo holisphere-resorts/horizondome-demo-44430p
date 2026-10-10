@@ -10,20 +10,18 @@
 <link rel="icon" type="image/svg+xml" href="media/favicon.svg">
 <link rel="stylesheet" href="style.css">
 <style>
-.legal-page .header{position:static;background:var(--bg);flex-wrap:wrap;border-bottom:1px solid var(--line)}
-.legal-page .header nav{position:static;max-height:none;padding:0;background:none;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;flex-direction:row;align-items:center;display:flex;gap:12px;flex-wrap:wrap}.legal-page .brand img{width:175px}
-.legal-main{max-width:1000px;margin:auto;padding:clamp(36px,6vw,80px) var(--space);overflow-wrap:anywhere}
+.legal-page .header{background:var(--bg);border-bottom:1px solid var(--line)}
+.legal-main{max-width:1000px;margin:auto;padding:calc(clamp(36px,6vw,80px) + 64px) var(--space) clamp(36px,6vw,80px);overflow-wrap:anywhere}
 .legal-main h1{font-size:clamp(40px,6vw,72px);margin:24px 0}.legal-main h2{font-size:clamp(25px,3.4vw,36px);line-height:1.2;margin-bottom:18px}
 .legal-main p,.legal-main li{max-width:75ch}.legal-section{padding:30px 0;border-top:1px solid var(--line)}
 .legal-meta{color:var(--muted);margin-bottom:30px}.legal-notice{padding:18px;border:1px solid var(--gold);margin-bottom:30px;color:var(--gold)}
 .legal-nav{display:flex;gap:12px 24px;flex-wrap:wrap;align-items:center}.legal-nav a{font-size:14px;min-height:44px;display:inline-flex;align-items:center}
 .legal-page .footer{border-top:1px solid var(--line)}.legal-page .footer p{margin-top:18px}.legal-main details{margin-top:0}.legal-main summary{font-size:18px}.legal-main details p{color:var(--ink)}
-@media(max-width:420px){.legal-page .header{padding:18px 24px;gap:12px}.legal-page .header nav{width:100%;justify-content:space-between}}
 </style>
 </head>
 <body data-title-de="Vertragsinformationen — HORIZON DOME" class="legal-page" data-title-nl="Algemene voorwaarden — HORIZON DOME" data-title-en="Terms — HORIZON DOME">
 <a data-nl="Naar de inhoud" data-en="Skip to content" class="skip-link" href="#content" data-de="Zum Inhalt">Naar de inhoud</a>
-<header class="header"><a class="brand" href="index.html" aria-label="HORIZON DOME"><img src="media/logo.svg" alt="HORIZON DOME" width="620" height="144"></a><nav aria-label="Navigatie" data-aria-nl="Navigatie" data-aria-en="Navigation" data-aria-de="Navigation"><a data-nl="Home" data-en="Home" href="index.html" data-de="Start">Home</a><div class="languages" role="group" aria-label="Taal / Language / Sprache"><button type="button" data-language="nl" aria-pressed="true" lang="nl">NL</button><button type="button" data-language="en" aria-pressed="false" lang="en">EN</button><button type="button" data-language="de" aria-pressed="false" lang="de">DE</button></div></nav></header>
+<header class="header"><a class="brand" href="index.html" aria-label="HORIZON DOME"><img src="media/logo.svg" alt="HORIZON DOME" width="620" height="144"></a><nav id="site-navigation" aria-label="Navigatie" data-aria-nl="Navigatie" data-aria-en="Navigation" data-aria-de="Navigation"><a data-nl="Home" data-en="Home" href="index.html" data-de="Start">Home</a></nav><div class="header-controls"><div class="languages" role="group" aria-label="Taal / Language / Sprache"><button type="button" data-language="nl" aria-pressed="true" lang="nl">NL</button><button type="button" data-language="en" aria-pressed="false" lang="en">EN</button><button type="button" data-language="de" aria-pressed="false" lang="de">DE</button></div><button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Menu openen" data-aria-nl="Menu openen" data-aria-en="Open menu" data-aria-de="Menü öffnen">≡</button></div></header>
 <main id="content" class="legal-main"><div data-language-content="nl en">
 <h1 data-nl="Algemene voorwaarden" data-en="Terms"  data-de="Bedingungen">Algemene voorwaarden</h1>
 <p data-nl="Versie: 10 oktober 2026" data-en="Version: 10 October 2026" class="legal-meta">Versie: 10 oktober 2026</p>
