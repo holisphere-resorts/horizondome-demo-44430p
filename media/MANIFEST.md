@@ -36,3 +36,5 @@ Do potwierdzenia: e-mail, telefon, nazwiska i role założycieli, prawna tożsam
 Demo ma `noindex, nofollow`. Ten znacznik nie zabezpiecza dostępu: ukryty link wymaga właściwego hostingu / kontroli dostępu. W tej rundzie przygotowano pliki; publikacja i domena nie zostały zmienione. Wspólne zasady projektu wskazują firmowy GitHub HOLISPHERE jako miejsce publikacji, a zadanie ogranicza zapis do lokalnych wyników.
 
 10.10 21:14 — zadanie I: usunięto ze strony telefon, WhatsApp i wszystkie telefoniczne placeholdery; kontakt prowadzi przez e-mail lub formularz.
+
+10.10 21:22 — zadanie J: tymczasowe logo ustawiono na LOGO2 / wariant 2 „kopuła pod gwiazdą” (wersja pozioma dark, light, sam znak dark i favicon).
