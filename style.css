@@ -78,10 +78,9 @@ select:focus-visible{outline:2px solid var(--gold);outline-offset:5px}
 .trust-strip p{margin:0;padding:24px;color:var(--gold);overflow-wrap:anywhere}.trust-strip p+p{border-top:1px solid var(--line)}
 .contact select{display:block;width:100%;max-width:100%;min-height:50px;border:1px solid #789186;border-radius:0;background:var(--bg);padding:12px 10px}
 .contact input,.contact textarea{min-width:0}.contact form>*{min-width:0}
-.mobile-contact{position:fixed;inset:auto 0 0;z-index:60;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:var(--bg);border-top:1px solid var(--gold);padding-bottom:env(safe-area-inset-bottom)}
+.mobile-contact{position:fixed;inset:auto 0 0;z-index:60;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));background:var(--bg);border-top:1px solid var(--gold);padding-bottom:env(safe-area-inset-bottom)}
 .mobile-contact a{display:flex;align-items:center;justify-content:center;min-height:54px;font-size:14px;text-decoration:none;min-width:0}
 .mobile-contact a:first-child{background:var(--gold);color:var(--bg)}.mobile-contact a+a{border-left:1px solid var(--line)}
-.contact-tooltip{position:fixed;right:16px;bottom:calc(66px + env(safe-area-inset-bottom));z-index:65;background:var(--ink);color:var(--bg);padding:8px 16px;border-radius:2px;font-size:14px}
 body:not(.legal-page){padding-bottom:calc(54px + env(safe-area-inset-bottom))}
 .back-to-top{bottom:calc(68px + env(safe-area-inset-bottom))}
 .legal-page .header nav{position:static;max-height:none;padding:0;background:none;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;flex-direction:row;align-items:center;overflow:visible}
@@ -96,7 +95,7 @@ body:not(.legal-page){padding-bottom:calc(54px + env(safe-area-inset-bottom))}
  .hero h1::after{width:90px;margin-top:24px}.hero-lead{margin-top:24px;font-size:16px}
  .hero-actions{margin-top:28px;gap:18px}.hero .button{min-height:54px}
  #slideshow-toggle{top:auto;bottom:24px;right:24px}.mobile-contact{display:none}
- body:not(.legal-page){padding-bottom:0}.back-to-top{bottom:18px}.contact-tooltip{bottom:24px}
+ body:not(.legal-page){padding-bottom:0}.back-to-top{bottom:18px}
 }
 @media(min-width:1180px){.header{padding:14px 24px}.header nav>.button{margin:0;align-self:center;min-height:44px;padding:10px 14px;font-size:12px}.header .nav-links{gap:14px}.header nav{gap:16px}.header .brand img{width:170px}}
 @media(prefers-reduced-motion:reduce){.hero-media .hero-slide{transition:none}.hero-media .hero-slide:not(:first-child){display:none}#slideshow-toggle{display:none}}

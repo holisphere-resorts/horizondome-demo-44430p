@@ -34,3 +34,5 @@ W `index.html` ustaw prawdziwy e-mail w `data-email` formularza oraz w jego `act
 Do potwierdzenia: e-mail, telefon, nazwiska i role założycieli, prawna tożsamość podmiotu w stopce, dane administratora oraz informacje zaznaczone w krótkiej sekcji Privacy. Dane produktowe: rejestr faktów, pozycje 1–18; modele: 11–14. Liczby osób przypisano wyłącznie do kolacji. Sprzedaż, montaż, transport, Eindhoven i rynki: potwierdzone odpowiedzi właściciela z 10.10.2026. Teksty NL wymagają korekty wskazanej przez właściciela osoby.
 
 Demo ma `noindex, nofollow`. Ten znacznik nie zabezpiecza dostępu: ukryty link wymaga właściwego hostingu / kontroli dostępu. W tej rundzie przygotowano pliki; publikacja i domena nie zostały zmienione. Wspólne zasady projektu wskazują firmowy GitHub HOLISPHERE jako miejsce publikacji, a zadanie ogranicza zapis do lokalnych wyników.
+
+10.10 21:14 — zadanie I: usunięto ze strony telefon, WhatsApp i wszystkie telefoniczne placeholdery; kontakt prowadzi przez e-mail lub formularz.

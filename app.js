@@ -67,7 +67,6 @@ function setLanguage(next) {
   document.title = document.body.dataset[`title${suffix}`] || message('HORIZON DOME — Transparante domes','HORIZON DOME — Transparent domes','HORIZON DOME — Transparente Domes');
   if (hasEmail && $('#email-display')) $('#email-display').textContent = configuredEmail;
   if ($('#form-status')) $('#form-status').textContent = '';
-  if ($('#contact-tooltip')) $('#contact-tooltip').hidden = true;
   if (lightbox?.open) updateLightbox();
   updateNavButton(); updateSlideButton();
   try { localStorage.setItem('horizondome-language',language); } catch (_) { /* Restricted storage: keep the current language in memory. */ }
@@ -160,21 +159,6 @@ if (lightbox) {
     if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') { event.preventDefault(); advance(event.key === 'ArrowLeft' ? -1 : 1); }
   });
 }
-let tooltipTimer;
-$$('[data-contact-placeholder]').forEach(link => {
-  // Guard the actual destination, so adding a real number enables the link.
-  if (!link.getAttribute('href').includes('[DO UZUPEŁNIENIA')) { link.removeAttribute('aria-disabled'); return; }
-  const notify = event => {
-    event.preventDefault();
-    const tooltip = $('#contact-tooltip');
-    tooltip.textContent = message('binnenkort','coming soon','bald verfügbar');
-    tooltip.hidden = false;
-    clearTimeout(tooltipTimer); tooltipTimer = setTimeout(() => { tooltip.hidden = true; },3500);
-  };
-  link.addEventListener('click',notify);
-  link.addEventListener('auxclick',notify);
-  link.addEventListener('contextmenu',notify);
-});
 $$('a[href="#contact"]').forEach(link => link.addEventListener('click', () => {
   inquiry = link.dataset.inquiry === 'advice' ? 'advice' : 'quote';
   if (link.dataset.model && $('#model')) $('#model').value = link.dataset.model;
