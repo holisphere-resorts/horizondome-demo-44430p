@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DRAFT: https://horizondome.com/ is a placeholder base URL.
+     Confirm the live domain and deployment path before publication.
+     Pages currently have noindex, nofollow; do not submit this draft to search engines.
+     The 404 error page is deliberately excluded from the sitemap. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://horizondome.com/</loc></url>
+  <url><loc>https://horizondome.com/privacy.html</loc></url>
+  <url><loc>https://horizondome.com/cookies.html</loc></url>
+  <url><loc>https://horizondome.com/voorwaarden.html</loc></url>
+  <url><loc>https://horizondome.com/faq.html</loc></url>
+  <url><loc>https://horizondome.com/support.html</loc></url>
+</urlset>
